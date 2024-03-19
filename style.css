@@ -1,0 +1,106 @@
+/*selector universal
+etiquetas
+class
+id
+in linea
+lo que se coloque dentro del asterico se coloca en todo el html*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*no deforma la caja original*/
+}
+/*estilos generales*/
+body {
+    color: #2B2B2B;
+background-color:#E6E6DD ;
+}
+/*estilos de header*/
+header {
+    background-color: #2B2B2B;
+    color: #E6E6DD;
+    margin: 0px 50px;
+    padding: 10px 30px;
+    box-shadow: 5px 5px 15px black;
+display: flex;/*row =fila te agrupa todo en fila*/
+/*flex-direction: column; /*es para trabajar en columna*/
+justify-content: space-between; /*tiene que tener una altura declarada*/
+align-items: center;
+
+}
+/*flex trabaja en filas o columnas desde una etiqueta padre, la etiqueta grande*/
+
+header img {
+    width: 20%;/*con % se adapata mas la imagen segun la resolucion de la pantalla*/
+}
+header nav {
+    margin-right: 30px;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px; /*genera espacios entre los items*/
+}
+main {
+    display: flex; /*trabaja en columnas*/
+    align-items: center;
+    justify-content: center;
+}
+
+main .img img {
+    width: 300px;
+}
+main .textos h1 span {
+    display: block;
+}
+ 
+main .textos {
+    text-align: center;
+}
+
+main .textos h1 {
+
+    margin: 10px 0px;
+}
+
+main .textos .boton {
+    background-color: #2B2B2B;
+    color: #E6E6DD;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block; /*es para que tome los 4 margenes*/
+    box-shadow: 5px 5px 15px black;
+}
+main .img {
+
+    display: flex;
+    justify-content: center;
+}
+/*estilos de section*/
+section {
+    background-color: #2B2B2B;
+    color: #E6E6DD;
+flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 0px 50px;
+    box-shadow: 5px 5px 15px black;
+
+}
+
+section div img {
+    width: 30%;
+}
+
+section div {
+    text-align: center;
+
+}
+section div h3 {
+    margin: 10px;
+}
+footer {
+
+    margin-top: 10px;
+   text-align: center;
+}
